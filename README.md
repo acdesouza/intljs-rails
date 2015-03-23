@@ -24,10 +24,22 @@ Or install it yourself as:
 
 ## Usage
 
-The jquery and jquery-ujs files will be added to the asset pipeline and available for you to use. If they're not already in `app/assets/javascripts/application.js` by default, add these lines:
+The Intl.js files will be added to the asset pipeline and available for you to use.
+So, you should add, in `app/assets/javascripts/application.js`, these lines:
 
 ```js
 //= require Intl
+
+IntlPolyfill.__addLocaleData({locale-data/json})
+```
+
+Where {locale-data/json} is the content of a wanted [locales](https://github.com/andyearnshaw/Intl.js/tree/v0.1.4/locale-data/json)
+
+Or, you can add all locales using:
+```js
+//= require Intl.complete
+
+IntlPolyfill.__addLocaleData({locale-data/json})
 ```
 
 ## Contributing
