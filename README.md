@@ -2,6 +2,8 @@
 
 [Intl.js](https://github.com/andyearnshaw/Intl.js) gemificated
 
+ Read [this comment](https://github.com/andyearnshaw/Intl.js/issues/87#issuecomment-103552744), before use this gem
+
 ## Version
 
 I will follow Intl.js version numbers.
